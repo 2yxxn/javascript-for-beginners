@@ -2,6 +2,10 @@ body {
     color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 #top {
     display: flex;
     justify-content: space-between;
@@ -20,8 +24,45 @@ body {
     margin-top: -60px;
 }
 
-.hidden {
+#login-form {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.hidden#login-form {
     display: none;
+}
+
+#login-form input:first-child {
+    margin-right: 10px;
+}
+
+#login-form input:first-child,
+#todo-form-input {
+    border: none;
+    border-bottom: solid 2px white;
+    background: none;
+    color: white;
+}
+
+#login-form input:first-child:focus,
+#todo-form-input:focus {
+    outline: none;
+}
+
+#login-form input:first-child::placeholder,
+#todo-form-input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+#login-form input:last-child {
+    border: none;
+    border-bottom: solid 2px white;
+    background: none;
+    color: white;
 }
 
 #todo-form {
@@ -32,20 +73,7 @@ body {
 #todo-form-input {
     width: 300px;
     height: 40px;
-    border: none;
-    border-bottom: solid 2px white;
-    background: none;
-    color: white;
     font-size: 20px;
-}
-
-#todo-form-input:focus {
-    outline: none;
-}
-
-#todo-form-input::placeholder {
-    color: white;
-    text-align: center;
 }
 
 #todo-list {
